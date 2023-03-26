@@ -49,12 +49,12 @@ function Todo() {
         <center className="form">
             <img src={logo} alt="Logo" width="300" height="250" className="d-inline-block align-text-top" id="img"/>
             <h1 className="mt-5">WELCOME! 👋</h1>
-            {/* <h3>To-dos'</h3> */}
+            <h3 className="p">Get Started</h3>
             <form onSubmit={addTask} className="form-group mb-2 col-md-4">
                 <input className="form-control mb-2" type="text" placeholder="Enter task" name="task" />
                 <input className="form-control" type="date" name="date" />
                 <center>
-                    <button className="btn btn-outline-light mt-1" type="submit">Add</button>
+                    <button className="btn btn-outline-light mt-3" type="submit">Add</button>
                 </center>
             </form>
         </center>

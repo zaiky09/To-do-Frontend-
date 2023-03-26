@@ -2,7 +2,7 @@ button {
     background-color: white;
     border: none;
     padding: 10px;
-    margin-right: 5px;
+    margin-right: 8px;
 }
   
 button.active {
@@ -28,6 +28,11 @@ button.active {
     justify-content: center;
     align-items: center;
     color: black;
+}
+
+.p {
+    color: white;
+    margin-top: 20px;
 }
 
 /* .status {
