@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from '../assets/trace.svg';
 import './Todo.css';
 
 function Todo() {
@@ -45,7 +46,8 @@ function Todo() {
     <div>
         {/* <NavBar/> */}
         <center>
-            <h1>WELCOME! 👋</h1>
+            
+            <h1 className="mt-5">WELCOME! 👋</h1>
             <h3>To-dos'</h3>
             <form onSubmit={addTask} className="form-group mb-2 col-md-4">
                 <input className="form-control mb-2" type="text" placeholder="Enter task" name="task" />
@@ -56,8 +58,8 @@ function Todo() {
             </form>
         </center>
 
-        <div>
-            <h3>Status of Tasks</h3>
+        <div className="text-center">
+            <h3 className="mt-5">Status of Tasks</h3>
             <button className={filter === "all" ? "active" : ""} onClick={() => setFilter("all")}>
             All
             </button>
@@ -75,10 +77,10 @@ function Todo() {
             </button>
         </div>
 
-        <div>
+        <div className="list">
             <ol>
                 {filterTasks(filter).map((task, index) => (
-                <li key={index}>
+                <li className="mb-2" key={index}>
                     <span
                     style={{ textDecoration: task.status === "completed" ? "line-through" : "none" }}
                     onClick={() => toggleStatus(index)}
