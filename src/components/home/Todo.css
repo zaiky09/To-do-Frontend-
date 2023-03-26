@@ -1,0 +1,12 @@
+button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+  }
+  
+  button.active {
+    background-color: green;
+    color: white;
+  }
+

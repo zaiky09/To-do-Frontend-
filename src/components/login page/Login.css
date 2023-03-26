@@ -1,0 +1,18 @@
+/* Login page */
+#log{
+    /* background-image: url('../assets/PET FINDER_adobe_express.svg'); */
+    /* background-size: cover; */
+    /* background-color: (#462B45) ; */
+    background-image: linear-gradient(to bottom,white, #517152);
+    height: 100vh;
+    background-blend-mode: color-burn;
+}
+
+form {
+    margin-top: 80px;
+}
+
+
+p {
+    color: whitesmoke!important;
+}
