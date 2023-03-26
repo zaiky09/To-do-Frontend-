@@ -6,12 +6,30 @@ button {
 }
   
 button.active {
-    background-color: green;
+    background-color: goldenrod;
     color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/pexels-marcelo-jaboo-696407.jpg");
+    height: 80vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center
 }
 
 .list {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+
+.status {
+    /* background-image: linear-gradient(to bottom, black, white); */
 }

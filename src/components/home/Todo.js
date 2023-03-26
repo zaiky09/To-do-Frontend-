@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from '../assets/trace.svg';
 import './Todo.css';
+import NavBar from "../navbar/NavBar";
 
 function Todo() {
   const [tasks, setTasks] = useState([]);
@@ -44,53 +45,54 @@ function Todo() {
 
   return (
     <div>
-        {/* <NavBar/> */}
-        <center>
-            
+        <NavBar/>
+        <center className="form">
+            <img src={logo} alt="Logo" width="300" height="250" class="d-inline-block align-text-top"/>
             <h1 className="mt-5">WELCOME! 👋</h1>
-            <h3>To-dos'</h3>
+            {/* <h3>To-dos'</h3> */}
             <form onSubmit={addTask} className="form-group mb-2 col-md-4">
                 <input className="form-control mb-2" type="text" placeholder="Enter task" name="task" />
                 <input className="form-control" type="date" name="date" />
                 <center>
-                    <button className="btn btn-outline-info mt-1" type="submit">Add</button>
+                    <button className="btn btn-outline-light mt-1" type="submit">Add</button>
                 </center>
             </form>
         </center>
+        <div className="status">
+            <div className="text-center">
+                <h3 className="mt-5">Status of Tasks</h3>
+                <button className={filter === "all" ? "active" : ""} onClick={() => setFilter("all")}>
+                All
+                </button>
+                <button
+                className={filter === "in progress" ? "active" : ""}
+                onClick={() => setFilter("in progress")}
+                >
+                In Progress
+                </button>
+                <button
+                className={filter === "completed" ? "active" : ""}
+                onClick={() => setFilter("completed")}
+                >
+                Completed
+                </button>
+            </div>
 
-        <div className="text-center">
-            <h3 className="mt-5">Status of Tasks</h3>
-            <button className={filter === "all" ? "active" : ""} onClick={() => setFilter("all")}>
-            All
-            </button>
-            <button
-            className={filter === "in progress" ? "active" : ""}
-            onClick={() => setFilter("in progress")}
-            >
-            In Progress
-            </button>
-            <button
-            className={filter === "completed" ? "active" : ""}
-            onClick={() => setFilter("completed")}
-            >
-            Completed
-            </button>
-        </div>
-
-        <div className="list">
-            <ol>
-                {filterTasks(filter).map((task, index) => (
-                <li className="mb-2" key={index}>
-                    <span
-                    style={{ textDecoration: task.status === "completed" ? "line-through" : "none" }}
-                    onClick={() => toggleStatus(index)}
-                    >
-                    {task.task} - {task.date}
-                    </span>
-                    <button className="btn btn-outline-danger ms-5" onClick={() => deleteTask(index)}>Delete</button>
-                </li>
-                ))}
-            </ol>
+            <div className="list">
+                <ol>
+                    {filterTasks(filter).map((task, index) => (
+                    <li className="mb-2" key={index}>
+                        <span
+                        style={{ textDecoration: task.status === "completed" ? "line-through" : "none" }}
+                        onClick={() => toggleStatus(index)}
+                        >
+                        {task.task} - {task.date}
+                        </span>
+                        <button className="btn btn-outline-danger ms-5" onClick={() => deleteTask(index)}>Cancel</button>
+                    </li>
+                    ))}
+                </ol>
+            </div>
         </div>
     </div>
   );
