@@ -57,7 +57,7 @@ function Todo() {
         </center>
 
         <div>
-            <h3>Staus of Tasks</h3>
+            <h3>Status of Tasks</h3>
             <button className={filter === "all" ? "active" : ""} onClick={() => setFilter("all")}>
             All
             </button>
