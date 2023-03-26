@@ -47,7 +47,7 @@ function Todo() {
     <div>
         <NavBar/>
         <center className="form">
-            <img src={logo} alt="Logo" width="300" height="250" class="d-inline-block align-text-top"/>
+            <img src={logo} alt="Logo" width="300" height="250" className="d-inline-block align-text-top" id="img"/>
             <h1 className="mt-5">WELCOME! 👋</h1>
             {/* <h3>To-dos'</h3> */}
             <form onSubmit={addTask} className="form-group mb-2 col-md-4">
@@ -60,7 +60,7 @@ function Todo() {
         </center>
         <div className="status">
             <div className="text-center">
-                <h3 className="mt-5">Status of Tasks</h3>
+                <h3 className="mt-3">Status of Tasks:</h3>
                 <button className={filter === "all" ? "active" : ""} onClick={() => setFilter("all")}>
                 All
                 </button>

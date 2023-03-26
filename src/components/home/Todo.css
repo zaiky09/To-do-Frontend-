@@ -27,9 +27,21 @@ button.active {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
+}
+
+/* .status {
+    background-image: linear-gradient(to bottom, black, white);
+} */
+
+/* #img {
+    margin-bottom: 190px;
+} */
+
+.mt-5 {
     color: white;
 }
 
-.status {
-    /* background-image: linear-gradient(to bottom, black, white); */
+.mt-3 {
+    text-decoration: underline;
 }
