@@ -27,7 +27,7 @@ function Login({setIsLoggedIn, setUserId, userId}) {
   function handleSubmit(e) {
     e.preventDefault();
 
-        fetch('https://zamil-petfinder.onrender.com/auth/login', {
+        fetch('', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
