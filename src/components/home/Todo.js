@@ -79,19 +79,19 @@ function Todo() {
             <div className="text-center">
                 <h3 className="mt-3">Status of Tasks:</h3>
                 <button className={filter === "all" ? "active" : ""} onClick={() => setFilter("all")}>
-                All
+                    All
                 </button>
                 <button
-                className={filter === "in progress" ? "active" : ""}
-                onClick={() => setFilter("in progress")}
-                >
-                In Progress
+                    className={filter === "in progress" ? "active" : ""}
+                    onClick={() => setFilter("in progress")}
+                    >
+                    In Progress
                 </button>
                 <button
-                className={filter === "completed" ? "active" : ""}
-                onClick={() => setFilter("completed")}
-                >
-                Completed
+                    className={filter === "completed" ? "active" : ""}
+                    onClick={() => setFilter("completed")}
+                    >
+                    Completed
                 </button>
             </div>
 
@@ -100,50 +100,50 @@ function Todo() {
                     {filterTasks(filter).map((task, index) => (
                     <li className="mb-2" key={index}>
                         <span
-                        style={{ textDecoration: task.status === "completed" ? "line-through" : "none" }}
-                        onClick={() => toggleStatus(index)}
-                        >
-                        {task.task} - {task.date}
+                            style={{ textDecoration: task.status === "completed" ? "line-through" : "none" }}
+                            onClick={() => toggleStatus(index)}
+                            >
+                            {task.task} - {task.date}
                         </span>
                         <button className="btn btn-outline-danger ms-5" onClick={() => deleteTask(index)}>Cancel</button>
                         <button
-      className="btn btn-outline-primary ms-2"
-      onClick={() => setShowEditForm(index)}
-    >
-      Edit
-    </button>
-    {showEditForm === index && (
-      <form
-        onSubmit={(event) => {
-          event.preventDefault();
-          const updatedTask = event.target.elements.updatedTask.value;
-          const updatedDate = event.target.elements.updatedDate.value;
-          editTask(index, updatedTask, updatedDate);
-          setShowEditForm(null);
-        }}
-        className="form-group mt-2"
-      >
-        <input
-          className="form-control mb-2"
-          type="text"
-          placeholder="Enter updated task"
-          name="updatedTask"
-          defaultValue={task.task}
-        />
-        <input
-          className="form-control mb-2"
-          type="date"
-          name="updatedDate"
-          defaultValue={task.date}
-        />
-        <button className="btn btn-outline-success me-2" type="submit">
-          Save
-        </button>
-        <button className="btn btn-outline-danger" onClick={() => setShowEditForm(null)}>
-          Cancel
-        </button>
-      </form>
-    )}
+                            className="btn btn-outline-primary ms-2"
+                            onClick={() => setShowEditForm(index)}
+                            >
+                            Edit
+                        </button>
+                        {showEditForm === index && (
+                        <form
+                            onSubmit={(event) => {
+                            event.preventDefault();
+                            const updatedTask = event.target.elements.updatedTask.value;
+                            const updatedDate = event.target.elements.updatedDate.value;
+                            editTask(index, updatedTask, updatedDate);
+                            setShowEditForm(null);
+                            }}
+                            className="form-group mt-2"
+                            >
+                            <input
+                                className="form-control mb-2"
+                                type="text"
+                                placeholder="Enter updated task"
+                                name="updatedTask"
+                                defaultValue={task.task}
+                            />
+                            <input
+                                className="form-control mb-2"
+                                type="date"
+                                name="updatedDate"
+                                defaultValue={task.date}
+                            />
+                            <button className="btn btn-outline-success me-2" type="submit">
+                                Save
+                            </button>
+                            <button className="btn btn-outline-danger" onClick={() => setShowEditForm(null)}>
+                                Cancel
+                            </button>
+                        </form>
+                        )}
                     </li>
                     ))}
                 </ol>

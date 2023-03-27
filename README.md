@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+## This is a To-do Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Getting Started with Create React App
 
-## Available Scripts
+This project was bootstrapped with Create React App.
 
-In the project directory, you can run:
+### Description
 
-### `npm start`
+This repo represents the frontend functionality of a To-do-Frontend App.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Requirements
+In order for you to use the content on this repo ensure you have the following:
 
-### `npm test`
+A computer that runs on either of the following; (Windows 7+, Linux, Mac OS).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+nodejs 9.0+ Visual Studio Code. Live server extension.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Alternative One
+Open a terminal / command line interface on your computer.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the repo by using the following to create a copy on your local machine:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  git clone git@github.com:zaiky09/To-do-Frontend-.git
+Change directory to the repo folder:
 
-### `npm run eject`
+  cd To-do-Frontend
+Open it in Visual Studio Code
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  code .
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Alternative Two
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+On the top right corner of this page there is a button labelled Fork.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Click on the button to fork the repo to your own account.
 
-## Learn More
+Follow the process in Alternative One above.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Remember to replace your username when cloning.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+      git clone https://github.com/zaiky09/To-do-Frontend-
 
-### Code Splitting
+### Running the application
+To run the application, you can use the following steps to run the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm install (to install required dependancies).
 
-### Analyzing the Bundle Size
+npm start (follow the link  (http://localhost:3000) provided to open the application on your browser).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Deliverables
+A user should be able to:
 
-### Making a Progressive Web App
+register / login to the application.
+add a new task.
+view all the tasks they have added.
+view all the atasks.
+update details of tasks they added.
+remove task.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
+  Zamil Mozamil Sheikh
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+  MIT

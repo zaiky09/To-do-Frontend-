@@ -6,7 +6,7 @@ button {
 }
   
 button.active {
-    background-color: goldenrod;
+    background-color: #517152;
     color: white;
 }
 
