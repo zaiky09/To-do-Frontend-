@@ -19,15 +19,17 @@ nodejs 9.0+ Visual Studio Code. Live server extension.
 
 
 ### Alternative One
-Open a terminal / command line interface on your computer.
+##### Open a terminal / command line interface on your computer.
 
-Clone the repo by using the following to create a copy on your local machine:
+##### Clone the repo by using the following to create a copy on your local machine:
 
-  git clone git@github.com:zaiky09/To-do-Frontend-.git
-Change directory to the repo folder:
+    git clone git@github.com:zaiky09/To-do-Frontend-.git
 
-  cd To-do-Frontend
-Open it in Visual Studio Code
+##### Change directory to the repo folder:
+
+    cd To-do-Frontend
+
+##### Open it in Visual Studio Code
 
   code .
 
