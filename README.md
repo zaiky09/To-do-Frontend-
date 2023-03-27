@@ -60,6 +60,16 @@ view all the atasks.
 update details of tasks they added.
 remove task.
 
+## Routes
+Login page
+    #### http://localhost:3000/
+
+SignUp page
+    #### http://localhost:3000/signup
+
+Home page
+    #### http://localhost:3000/home
+
 ## Author
   Zamil Mozamil Sheikh
 
